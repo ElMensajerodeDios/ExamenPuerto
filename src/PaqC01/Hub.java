@@ -107,4 +107,20 @@ public class Hub implements Serializable {
         }
         return cantidad;
     }
+
+    public String metodoPeso(int peso) {
+        String resultado = "";
+        boolean a = false;
+
+        for(int i = 0; i < contenedores.length; i++) {
+            for(int j = 0; j < contenedores[i].length; j++) {
+                if(contenedores[i][j].getPesoCont() >= peso) {
+                    a = contenedores[i][j].isAduanas();
+                    a = true;
+                    resultado = resultado + contenedores[i][j].getNumeroIdentf() + contenedores[i][j].getNombreEmpresaEnvia() + contenedores[i][j].getPesoCont() + a + '\n';
+                }
+            }
+        }
+        return resultado;
+    }
 }

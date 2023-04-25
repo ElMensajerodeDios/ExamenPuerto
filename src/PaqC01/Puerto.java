@@ -42,4 +42,8 @@ public class Puerto implements Serializable {
 
         return total;
     }
+
+    public String metodoPeso(int hub_usar, int peso) {
+        return puerto[hub_usar].metodoPeso(peso);
+    }
 }
