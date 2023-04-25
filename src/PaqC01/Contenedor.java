@@ -66,4 +66,8 @@ public class Contenedor implements Serializable {
     public String getNombreEmpresaRecibe() {
         return nombreEmpresaRecibe;
     }
+
+    public void setAduanas(boolean aduanas) {
+        this.aduanas = aduanas;
+    }
 }
